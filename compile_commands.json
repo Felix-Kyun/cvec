@@ -1,0 +1,19 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-pedantic",
+      "-Iinclude",
+      "-o",
+      "build/libvec.o",
+      "src/vec.c"
+    ],
+    "directory": "/home/felix/Code/c/vec",
+    "file": "/home/felix/Code/c/vec/src/vec.c",
+    "output": "/home/felix/Code/c/vec/build/libvec.o"
+  }
+]
