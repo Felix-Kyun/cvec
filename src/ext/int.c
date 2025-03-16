@@ -32,3 +32,14 @@ int int_vec_pop_back(Vec *vec) {
   return dealloc_int(vec_pop_back(vec));
 }
 
+int* to_int_array(Vec *vec) {
+  int *arr = (int *)malloc(vec->size * sizeof(int));
+  for (size_t i = 0; i < vec->size; i++) {
+    arr[i] = *(int *)vec_get(vec, i);
+  }
+  return arr;
+}
+
+int int_vec_get(Vec *vec, int index) {
+  return *(int *)vec_get(vec, index);
+}
